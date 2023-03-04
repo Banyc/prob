@@ -6,8 +6,11 @@ fn main() {
     let k: usize = 23;
     let n: usize = 365;
 
-    println!("Probability of same birthday: {}", calculate(k, n));
-    println!("Simulated probability of same birthday: {}", simulate(k, n));
+    println!("Probability of any same birthdays: {}", calculate(k, n));
+    println!(
+        "Simulated probability of any same birthdays: {}",
+        simulate(k, n)
+    );
 }
 
 fn calculate(k: usize, n: usize) -> f64 {
